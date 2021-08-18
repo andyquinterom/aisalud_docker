@@ -85,7 +85,7 @@ RUN R -e "install.packages(c('shiny', 'rmarkdown', 'renv'), repos='https://www.i
 
 EXPOSE 3838
 
-RUN cd / && git clone https://github.com/FundacionAIS/aisalud --branch v21.08.3
+RUN cd / && git clone https://github.com/proyais/aisalud --branch v21.08.3
 
 RUN R -e 'setwd("/aisalud"); renv::restore()'
 
