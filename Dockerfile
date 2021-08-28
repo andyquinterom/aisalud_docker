@@ -81,7 +81,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN apt-get install -y git-all
 
-RUN R -e "install.packages(c('shiny', 'rmarkdown', 'renv'), repos='https://www.icesi.edu.co/CRAN/')"
+RUN R -e "install.packages(c('renv'), repos='https://www.icesi.edu.co/CRAN/')"
 
 EXPOSE 3838
 
