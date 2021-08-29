@@ -85,8 +85,8 @@ RUN R -e "install.packages(c('renv'), repos='https://www.icesi.edu.co/CRAN/')"
 
 EXPOSE 3838
 
-RUN cd / && git clone https://github.com/proyais/aisalud --branch v21.08.3
+RUN cd / && git clone https://github.com/proyais/aisalud_combd --branch v21.9.1
 
-RUN R -e 'setwd("/aisalud"); renv::restore()'
+RUN R -e 'setwd("/aisalud_combd"); renv::restore()'
 
-CMD ["R", "-e", "shiny::runApp('/aisalud', host = '0.0.0.0', port = 3838)"]
+CMD ["R", "-e", "shiny::runApp('/aisalud_combd', host = '0.0.0.0', port = 3838)"]
