@@ -3,7 +3,7 @@
 Para compilar la imagen se debe utilizar el siguiente comando:
 
 ```bash
-docker build -t aisalud:21.08.3 - < Dockerfile
+docker build -t aisalud:21.9.1 - < Dockerfile
 ```
 
 Para correr la aplicación se deben pasar las variables de ambiente
